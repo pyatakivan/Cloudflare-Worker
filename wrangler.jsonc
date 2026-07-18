@@ -13,6 +13,18 @@
 	"upload_source_maps": true,
 	"compatibility_flags": [
 		"nodejs_compat"
+	],
+	"r2_buckets": [
+		{
+			"binding": "FLAGS_BUCKET",
+			"bucket_name": "my-secure-worker-flags"
+		}
+	],
+	"routes": [
+		{
+			"pattern": "tunnel.cloudwithflair.com/secure*",
+			"zone_name": "cloudwithflair.com"
+		}
 	]
 	/**
 	 * Smart Placement
